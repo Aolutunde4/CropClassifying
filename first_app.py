@@ -8,7 +8,6 @@ X = crops[['N','P','K','temperature','humidity','ph','rainfall']]
 y = crops['label']
 
 st.write("""
-######  <----- Change the parameters on the left and enjoy!
 # Introduction
 
 ###### Welcome to my first streamlit application!
@@ -44,6 +43,12 @@ df = user_input_features()
 st.subheader("User input parameters")
 
 st.write(df)
+
+st.write("""
+
+# Change parameters by clicking the top left arrow and enjoy!
+
+""")
 
 model = LogisticRegression(C=0.01, penalty = 'l2', solver='newton-cg')
 model.fit(X,y)
