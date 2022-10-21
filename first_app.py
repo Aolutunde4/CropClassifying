@@ -27,13 +27,13 @@ st.write("""
 st.sidebar.header("Farmer Input Parameters")
 
 def user_input_features():
-    N = st.sidebar.slider('Nitrogen', 0, 215, 90)
-    P = st.sidebar.slider('Phosphorus', 0, 215, 42)
+    N = st.sidebar.slider('Nitrogen', 0, 215, 13)
+    P = st.sidebar.slider('Phosphorus', 0, 215, 7)
     K = st.sidebar.slider('Potassium', 0, 215, 43)
-    temperature = st.sidebar.slider('Temperature', 0,50,21)
-    humidity = st.sidebar.slider('Humidity',10,100,82)
+    temperature = st.sidebar.slider('Temperature', 0,50,18)
+    humidity = st.sidebar.slider('Humidity',10,100,91)
     ph= st.sidebar.slider('Ph level',0,14,7)
-    rainfall = st.sidebar.slider('Rainfall',0,300,203)
+    rainfall = st.sidebar.slider('Rainfall',0,300,110)
     data = {'Nitrogen': N,
             'Phosphorus':P,
             'Potassium':K,
