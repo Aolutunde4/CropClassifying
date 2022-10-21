@@ -11,7 +11,7 @@ st.write("""
 # Introduction
 
 ###### Welcome to my first streamlit application!
-###### We help recommend crops that to beginning farmers.
+###### We help recommend what to farm to beginning farmers.
 ###### We have data on 22 different crops!
 
 """)
@@ -46,7 +46,7 @@ st.write(df)
 
 st.write("""
 
-# Change parameters by clicking the top left arrow and enjoy!
+#### Change parameters by clicking the top left arrow and enjoy!
 
 """)
 
@@ -56,7 +56,11 @@ model.fit(X,y)
 prediction = model.predict(df)
 prediction_probability = model.predict_proba(df)
 
-st.subheader("Crop recommended based off inputs")
+st.write("""
+
+##### Prediction:
+
+""")
 st.write(prediction)
 
 # st.subheader("Prediction Probability for each crop")
