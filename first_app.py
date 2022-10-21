@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 
-crops = pd.read_csv(r"C:\Users\manny\Documents\Hackathon\Crop_recommendation.csv")
+crops = pd.read_csv(r"Crop_recommendation.csv")
 
 X = crops[['N','P','K','temperature','humidity','ph','rainfall']]
 y = crops['label']
