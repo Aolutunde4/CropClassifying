@@ -8,7 +8,7 @@ X = crops[['N','P','K','temperature','humidity','ph','rainfall']]
 y = crops['label']
 
 st.write("""
-
+ <----- ###### Change the parameters on the left and enjoy!
 # Introduction
 
 ###### Welcome to my first streamlit application!
@@ -17,12 +17,6 @@ st.write("""
 
 """)
 st.write(pd.DataFrame({"Crop":crops['label'].unique()}))
-
-st.write("""
-
-###### Change the parameters on the left and enjoy!
-
-""")
 
 st.sidebar.header("Farmer Input Parameters")
 
