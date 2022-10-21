@@ -58,7 +58,7 @@ prediction_probability = model.predict_proba(df)
 
 st.write("""
 
-##### Prediction:
+##### Crop Prediction:
 
 """)
 st.write(prediction)
