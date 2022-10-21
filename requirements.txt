@@ -1,4 +1,3 @@
 ﻿streamlit==1.13.0
 pandas==1.2.4
 scikit-learn==1.1.2
-C:\\Users\\manny\\Documents\\Hackathon\\Crop_recommendation.csv
