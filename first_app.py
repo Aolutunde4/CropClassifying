@@ -15,7 +15,7 @@ st.write("""
 ###### We have data on 22 different crops!
 
 """)
-st.write(pd.DataFrame({"Crop":crops['label'].unique()}))
+st.write(pd.DataFrame({"Crops":crops['label'].unique()}))
 
 st.sidebar.header("Farmer Input Parameters")
 
